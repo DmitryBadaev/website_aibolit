@@ -1,0 +1,85 @@
+.advantages {
+    padding: 90px 0;
+
+    &__title {
+        font-family: 'SchoolBook';
+        font-style: normal;
+        font-weight: 400;
+        @include fluidFontSize(20px, 40px, 320px, 1920px, 40px);
+        line-height: 40px;
+        color: $text;
+        text-align: center;
+    }
+
+    &__wrapper {
+        margin: 104px auto 0 auto;
+        max-width: 85.41%;
+        display: grid;
+        gap: 70px;
+        grid-template-columns: repeat(3, minmax(300px, 484px));
+    }
+}
+.advantages-block {
+    border: 2px solid black;
+    box-shadow: 0 1px 15px black;
+    border-radius: 12px;
+    padding: 10px;
+
+    &__title {
+        font-family: 'SchoolBook';
+        font-style: normal;
+        font-weight: 400;
+        @include fluidFontSize(18px, 30px, 320px, 1920px, 30px);
+        line-height: 40px;
+        color: $text;
+    }
+
+    &__wrapper {
+        margin-top: 36px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__image {
+        width: 29.75%;
+        svg {
+            width: 100%;
+            fill: $orange;
+        }
+    }
+
+    &__descr {
+        width: 65.70%;
+        font-family: 'Futura New';
+        font-style: normal;
+        font-weight: 400;
+        @include fluidFontSize(15px, 20px, 320px, 1920px, 20px);
+        font-size: 20px;
+        line-height: 30px;
+        color: $brow;
+    }
+}
+@media (max-width: 1326px) {
+    .advantages__wrapper {
+        display: grid;
+        gap: 30px;
+        grid-template-columns: repeat(2, minmax(300px, 600px));
+    }
+}
+@media (max-width: 878px) {
+    
+    .advantages__wrapper {
+        display: grid;
+        grid-template-columns: 100%;
+        margin: 50px auto 0 auto;
+    }
+}
+@media (max-width: 454px) {
+    .advantages-block__wrapper {
+        flex-direction: column;
+    }
+    .advantages-block__descr {
+        width: 100%;
+    }
+}

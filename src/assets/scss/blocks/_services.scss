@@ -1,0 +1,70 @@
+.services {
+    padding: 150px 15px 0 15px;
+    width: 100%;
+    &__wrapper {
+        max-width: 1352px;
+        margin: 0 auto;
+        display: grid;
+        gap: 24px;
+        grid-template-columns: repeat(4, minmax(200px, 320px));
+        grid-template-rows: 220px;
+
+    }
+}
+.services-block {
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 20px;
+    box-shadow: 0px 1px 15px #FFC59E;
+    &__title {
+        display: block;
+        font-family: 'SchoolBook';
+        font-style: normal;
+        font-weight: 400;
+        @include fluidFontSize(16px, 30px, 320px, 1280px, 30px);
+        line-height: 40px;
+        color: $brow;
+    }
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items:flex-end;
+
+    }
+
+    &__counter {
+        font-family: 'Futura New';
+        font-style: normal;
+        font-weight: 400;
+        @include fluidFontSize(14px, 20px, 320px, 1280px, 25px);
+        color: $brow;
+    }
+
+    &__img {
+        svg {
+            fill: $orange;
+        }
+    }
+}
+@media (max-width: 1111px) {
+    .services__wrapper {
+        grid-template-columns: repeat(3, minmax(200px, 320px));
+        gap: 19px;
+        
+    }
+}
+@media (max-width: 805px) {
+    .services__wrapper {
+        grid-template-columns: repeat(2, minmax(200px, 320px));
+        gap: 15px;
+    }
+}
+@media (max-width: 500px) {
+    .services__wrapper {
+        grid-template-columns: 100%;
+        grid-template-rows: minmax(100px, 190px);
+    }
+}

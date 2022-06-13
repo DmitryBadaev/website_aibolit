@@ -1,4 +1,11 @@
+html {
+    font-size: calc(100vh / 100);
+    font-size: 10.34px;
+
+}
+
 body {
+    font-size: 30px;
 }
 * {
     box-sizing: border-box;
@@ -10,4 +17,12 @@ body {
 }
 .lock {
     overflow: hidden;
+}
+ul {
+    padding-inline-start: 0px;
+}
+h1,h2,h3,h4,h5,h6 {
+    margin: 0 0;
+    margin-block-start: 0;
+    margin-block-end: 0;
 }

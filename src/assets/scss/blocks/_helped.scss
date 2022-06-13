@@ -1,0 +1,47 @@
+.helped {
+    padding: 27.98vh 0 43.85vh 0;
+
+    &__content {
+        margin: 0 auto;
+        // width: 36.78%;
+        max-width: 716px;
+        padding: 0 15px;
+        position: relative;
+    }
+
+    &__counter {
+        font-family: 'SchoolBook';
+        font-style: normal;
+        font-weight: 700;
+        @include fluidFontSize(50px, 120px, 320px, 1920px, 144px);
+        line-height: 50px;
+        color: $brow;
+        text-align: center;
+    }
+
+    &__descr {
+        font-family: 'Futura New';
+        font-style: normal;
+        font-weight: 400;
+        @include fluidFontSize(30px, 68px, 320px, 1920px, 80px);
+        text-align: center;
+        line-height: 80px;
+        color: $brow;
+    }
+
+    &__decor {
+        position: absolute;
+        width: 288px;
+        height: 230px;
+        right: 30px;
+        bottom: -160px;
+        img {
+            width: 100%;
+        }
+    }
+}
+@media (max-width: 600px) {
+    .helped__decor {
+        right: -20px;
+    }
+}

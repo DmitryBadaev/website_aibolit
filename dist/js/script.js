@@ -164,6 +164,8 @@ __webpack_require__.r(__webpack_exports__);
 
 window.addEventListener('DOMContentLoaded', () => {
   "use strict";
+
+  console.log(window.innerHeight);
 });
 })();
 
