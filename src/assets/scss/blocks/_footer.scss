@@ -1,0 +1,241 @@
+.footer {
+    padding: 80px 0 60px 0;
+    background: $brow;
+
+    &__wrapper {
+        max-width: 1460px;
+        margin: 0 auto;
+        padding: 0 15px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__left {
+        width: 60.82%;
+        
+    }
+
+    &__nav {
+        margin: 29px auto 0 auto;
+        width: 88.18%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__privacy-policy {
+        width: 24.74%;
+        font-family: 'Futura New';
+        font-style: normal;
+        font-weight: 400;
+        @include fluidFontSize(13px, 20px, 320px, 1920px, 20px);
+        line-height: 30px;
+        color: #FFFFFF;
+        text-decoration: none;
+    }
+
+    &__list {
+        width: 24.74%;
+        list-style: none;
+    }
+
+    &__link {
+        font-family: 'Futura New';
+        font-style: normal;
+        font-weight: 400;
+        @include fluidFontSize(13px, 20px, 320px, 1920px, 20px);
+        line-height: 30px;
+        color: #FFFFFF;
+        text-decoration: none;
+    }
+
+    &__right {
+        width: 22.67%;
+    }
+
+    &__mail {
+        margin-top: 30px;
+        a {
+            margin-bottom: 10px;
+            display: block;
+            font-family: 'Futura New';
+            @include fluidFontSize(13px, 20px, 320px, 1920px, 20px);
+            font-size: 20px;
+            color: #FFFFFF;
+            text-decoration: none;
+        }
+    }
+}
+.footer-logo {
+    display: flex;
+    justify-content: space-between;
+    width: 36.48%;
+    &__img {
+        width: 27.77%;
+        img {
+            width: 100%;
+        }
+
+    }
+
+    &__content {
+        width: 66%;
+    }
+
+    &__title {
+        font-family: 'SchoolBook';
+        @include fluidFontSize(30px, 50px, 320px, 1920px, 50px);
+        color: #FFFFFF;
+        font-weight: 700;
+    }
+
+    &__descr {
+        margin-top: 5;
+        font-family: 'Futura New';
+        font-style: normal;
+        font-weight: 400;
+        @include fluidFontSize(15px, 20px, 320px, 1920px, 20px);
+        line-height: 20px;
+        color: #FFFFFF;
+    }
+}
+.footer-markets {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &__link {
+        width: 47%;
+        img {
+            width: 100%;
+        }
+    }
+}
+.footer-social {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    &__link {
+        width: 44px;
+        height: 44px;
+        svg {
+            fill: #FFFFFF;
+        }
+    }
+}
+@media (max-width:963px) {
+    .footer__right {
+        width: 30.67%;
+    }
+    .footer__privacy-policy{
+        width: 29%;
+    }
+    .footer__list{
+        width: 29%;
+        li {
+            line-height: 1;
+        }
+    }
+}
+@media (max-width:765px) {
+    .footer-logo {
+        margin: 0 auto;
+    }
+    .footer__wrapper {
+        flex-direction: column;
+    }
+    .footer__left {
+        width: 100%
+    }
+    .footer__right {
+        margin-top: 20px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .footer-markets {
+        order: 2;
+        width: 32%;
+        flex-direction: column;
+        &__link {
+            width: 90%;
+        }
+    }
+    .footer-social {
+        order: 3;
+        width: 32%;
+    }
+    .footer__mail {
+        order: 1;
+        width: 32%;
+    }
+    
+}
+@media (max-width:560px) {
+    .footer__nav {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    } 
+    .footer__privacy-policy {
+        width: 100%;
+        text-align: center;
+        font-size: 20px;
+    }
+    .footer__list {
+        margin-top: 20px;
+        width: 100%;
+        display: grid;
+        gap: 5px;
+        grid-template-columns: repeat(2, 50%);
+        li {
+            justify-self: end;
+            justify-self: start;
+            &:nth-child(2n) {
+                justify-self: end;
+            }
+        }
+        
+    }
+    .footer__link {
+        font-size: 18px;
+    }
+
+    .footer__right {
+        margin-top: 20px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+    .footer-markets {
+        order: 3;
+        margin-top: 20px;
+        width: 70%;
+        margin-right: auto;
+        margin-left: auto;
+        flex-direction: row;
+        &__link {
+            width: 47%;
+        }
+    }
+    .footer-social {
+        order: 2;
+        margin-top: 20px;
+        width: 80%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .footer__mail {
+        order: 1;
+        width: 80%;
+        margin-right: auto;
+        margin-left: auto;
+        display: flex;
+        justify-content: space-between;
+        a {
+            font-size: 20px;
+        }
+    }
+    
+}
+  

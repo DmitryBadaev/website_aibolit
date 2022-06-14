@@ -96,7 +96,6 @@
         height: 46px;
         cursor: pointer;
         transition: 0.3s all;
-        display: none;
         &:hover {
             transform: scale(1.1);
             .menu-block__select {
@@ -258,4 +257,7 @@
         }
     }
 
+}
+@media (max-width: 1047px) {
+    
 }
