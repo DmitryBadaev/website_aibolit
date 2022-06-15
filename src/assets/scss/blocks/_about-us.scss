@@ -1,13 +1,15 @@
 .about-us {
     background: #FBF8F8;
     padding: 108px 0;
+    
     &__wrapper {
         max-width: 1253px;
         margin: 0 auto;
     }
 
     &__content {
-        max-width: 479px;
+        max-width: 509px;
+        padding: 0 15px;
         margin: 0 auto;
     }
 
@@ -50,12 +52,17 @@
     }
 }
 .about-us-slider {
-
-    &__wrapper {
+    margin: 0 auto;
+    width: 100%;
+    &__shell{
         display: flex;
         justify-content: space-around;
-        position: relative;
+        // position: relative;
         padding: 0 15px;
+    }
+
+    &__wrapper {
+        
 
     }
 

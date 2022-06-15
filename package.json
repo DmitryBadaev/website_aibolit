@@ -34,6 +34,7 @@
     "not dead"
   ],
   "dependencies": {
-    "json-server": "^0.17.0"
+    "json-server": "^0.17.0",
+    "swiper": "^8.2.4"
   }
 }

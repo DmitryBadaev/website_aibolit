@@ -1,11 +1,12 @@
-import tabs from './modules/tabs';
+import burger from './modules/burger';
+import slider from './modules/slider';
 
-import services from './services/services';
+// import services from './services/services';
 
 window.addEventListener('DOMContentLoaded', () => {
     "use strict";
-    console.log(window.innerHeight);
-    
+    burger();
+    slider();
 });
 
 
