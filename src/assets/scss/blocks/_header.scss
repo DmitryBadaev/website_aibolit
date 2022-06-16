@@ -52,8 +52,7 @@
         color: #C3B9B5;
         transition: 0.3s all;
         &:hover {
-            color: $brow;
-            transform: scale(11);
+            color: $orange;
         }
         
     }
@@ -91,7 +90,6 @@
 
     }
     &-block {
-        // width: 12%;
         width: 171px;
         display: flex;
         align-items: center;
@@ -102,17 +100,18 @@
         &:hover {
             transform: scale(1.1);
             .menu-block__select {
-                color: $brow;
+                color: $text;
             }
             .menu-block__icon {
                 svg {
-                    fill: $brow;
+                    fill: $text;
                 }
             }
 
             }
         &__icon {
             margin-top:10px;
+            transition: 0.3s all;
             svg {
                 transition: 0.2s all;
                 fill: $orange;

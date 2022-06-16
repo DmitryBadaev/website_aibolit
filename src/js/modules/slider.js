@@ -1,29 +1,37 @@
 import Swiper, { Navigation, Pagination } from 'swiper'; 
 function slider () {
-    const swiper = new Swiper('.swiper', {
+    const swiper = new Swiper('.about-us-slider', {
         modules: [ Navigation, Pagination ],
-        slidesPerView: 6,
         loop: true,
         speed: 400,
-        spaceBetween: 15,
-        autoplay: {
-            delay: 500,
-        },
+        
         navigation: {
             nextEl: '.about-us-slider__next',
             prevEl: '.about-us-slider__prev'
         },
-        // breakpoints: {
-        //     750: {
-        //         slidesPerView: 4,
-        //         spaceBetween: 30
-        //     },
-        //     500: {
-        //         slidesPerView: 3,
-        //         spaceBetween: 30
+        breakpoints: {
+            1120: {
+                slidesPerView: 6,
+                spaceBetween: 10
+            },
+            950:{
+                slidesPerView: 5,
+                spaceBetween: 15
+            },
+            750: {
+                slidesPerView: 4,
+                spaceBetween: 15
+            },
+            500: {
+                slidesPerView: 2,
+                spaceBetween: 15
               
-        //     }
-        // }
+            },
+            320: {
+                slidesPerView: 1,
+                spaceBetween: 15
+            }
+        }
     });
 }
 export default slider;

@@ -96,29 +96,36 @@ __webpack_require__.r(__webpack_exports__);
 
 
 function slider() {
-  const swiper = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"]('.swiper', {
+  const swiper = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"]('.about-us-slider', {
     modules: [swiper__WEBPACK_IMPORTED_MODULE_0__.Navigation, swiper__WEBPACK_IMPORTED_MODULE_0__.Pagination],
-    slidesPerView: 6,
     loop: true,
     speed: 400,
-    spaceBetween: 15,
-    autoplay: {
-      delay: 500
-    },
     navigation: {
       nextEl: '.about-us-slider__next',
       prevEl: '.about-us-slider__prev'
-    } // breakpoints: {
-    //     750: {
-    //         slidesPerView: 4,
-    //         spaceBetween: 30
-    //     },
-    //     500: {
-    //         slidesPerView: 3,
-    //         spaceBetween: 30
-    //     }
-    // }
-
+    },
+    breakpoints: {
+      1120: {
+        slidesPerView: 6,
+        spaceBetween: 10
+      },
+      950: {
+        slidesPerView: 5,
+        spaceBetween: 15
+      },
+      750: {
+        slidesPerView: 4,
+        spaceBetween: 15
+      },
+      500: {
+        slidesPerView: 2,
+        spaceBetween: 15
+      },
+      320: {
+        slidesPerView: 1,
+        spaceBetween: 15
+      }
+    }
   });
 }
 
